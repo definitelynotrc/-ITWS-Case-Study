@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=BhuTuka+Expanded+One&family=Bungee+Inline&family=Cabin+Condensed:wght@400;500;600;700&family=Cinzel&family=Fugaz+One&family=Indie+Flower&family=Merriweather:ital,wght@0,300;1,400&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Press+Start+2P&family=Shadows+Into+Light&display=swap');
+*
+{
+    font-family: 'Bebas Neue', cursive;
+    padding: 0px;
+    margin: 0px;
+  
+}
+.container
+ {
+    letter-spacing: 4px;
+    overflow: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.logo 
+{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+
+}
+.logo h1
+{
+    margin-top: 20px;
+    color: white;
+    font-size: 70px;
+}
+.logo img 
+{
+    width: 750px;
+    height: 761px;
+    transform: rotate(30deg) scaleX(-1);
+}
+
+
+.login
+ {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.login h2
+{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.login form {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.login form .inputBox input 
+{
+    width: 95%;
+    height: 30px;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.inputBox input {
+    letter-spacing: 3px;
+}
+.inputBox 
+{
+    
+    width: 100%;
+    height: 20%;
+}
+.login form button
+ {
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    border: solid 1px black;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.login form button:hover 
+{
+    background: white;
+    color: black;
+    border: solid 1px black;
+}
+
+.login form textarea{
+    width: 300px;
+    height: 100px;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 5px;
+    letter-spacing: 3px;
+}

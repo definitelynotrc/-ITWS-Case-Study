@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="check.css">
+    <script src="https://kit.fontawesome.com/71e01f07a3.js" crossorigin="anonymous"> </script>
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Payment Process</h1>
+    <div class="main">
+        <div class="container">
+            <div class="left">
+                <div class="personalbox">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa-regular fa-user"></i> Full Name</label><br>
+                    <input type="text" id="fname" name="firstname"><br>
+                    <label for="email"><i class="fa-regular fa-envelope"></i> Email</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label><br>
+                    <input type="text" id="adr" name="address"><br>
+                    <label for="number"><i class="fa-regular fa-phone"></i> Phone Number</label><br>
+                    <input type="text" id="number" name="number"><br>
+                    <label for="city"><i class="fa-regular fa-institution"></i> City</label><br>
+                    <input type="text" id="city" name="city"><br>
+                    <label for="state"> <i class="fa-regular fa-map"></i>Province</label><br>
+                    <input type="text" id="state" name="state"><br>
+                    <label for="zip"> <i class="fa-regular fa-envelope-dot"></i>Zip</label><br>
+                    <input type="text" id="zip" name="zip"><br>
+                </div>
+            </div>
+           
+            <div class="right">
+                <h2>Payment</h2>
+                <label for="Delivery">Choose Delivery Options:</label>
+                <div class="select">
+                    <select name="Delivery" id="Delivery">
+                        <option value="COD">COD(Cash On Delivery)</option>
+                        <option value="Paypal">Payment Center / e-Wallet</option>
+                        <option value="Visa">Linked Bank Account</option>
+                        <option value="gcash">Credit / Debit Card</option>
+                    </select>
+                    <br><br>
+                </div>
+                <h2>Payment Center / e-Wallet</h2>
+                <label for="Paypal"> <i class="fa-duotone fa-credit-card"></i>7-eleven CLiQQ</label><br>
+                <input type="radio" id="7-eleven CLiQQ" name="7-eleven CLiQQ" value="7-eleven CLiQQ"><br>
+                <label for="Paypal"> <i class="fa-regular fa-wallet"></i>GCash</label><br>
+                <input type="radio" id="GCash" name="GCash" value="GCash"><br>
+                <h2>Linked Bank Account</h2>
+                <label for="Visa"><i class="fa-regular fa-credit-card"></i>BDO</label><br>
+                <input type="radio" id="BDO" name="BDO" value="BDO"><br>
+                <label for="Visa"><i class="fa-regular fa-credit-card"></i>BPI</label><br>
+                <input type="radio" id="BPI" name="BPI" value="BPI"><br>
+                <h2>Credit / Debit Card</h2>
+                <label for="gcash"><i class="fa-brands fa-cc-mastercard"></i></i>Mastercard</label><br>
+                <input type="radio" id="Mastercard" name="Mastercard" value="Mastercard"><br>
+                <label for="gcash"><i class="fa-brands fa-cc-visa"></i>Visa</label><br>
+                <input type="radio" id="Visa" name="Visa" value="Visa"><br>
+                <label for="gcash"><i class="fa-brands fa-cc-paypal"></i></i>Paypal</label><br>
+                <input type="radio" id="Paypal" name="Paypal" value="Paypal"><br>
+                <button class="checkout"> Place Order</button>
+            </div>
+        </div>
+        <div class="item">
+          <h1 id="shoe">Adidas Yeezy Boost 350 'Zebra'</h1>
+            <img src="PngItem_4461010.png" alt="jordan4">
+           <h2> Price</h2> 
+          <p id="price"> ₱17,162.10</p>  
+        </div>
+    </div>
+    <div id="myModal" class="modal">\
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank You For Purchasing Adidas Yeezy Boost 350 'Zebra' for ₱17,162.10</p>
+        </div>
+    </div>
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.querySelectorAll(".checkout");
+        var span = document.getElementsByClassName("close")[0];
+
+
+        btn.forEach(button => {
+            button.onclick = function () {
+                modal.style.display = "block";
+            }
+        })
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

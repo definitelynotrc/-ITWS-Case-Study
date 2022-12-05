@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=BhuTuka+Expanded+One&family=Bungee+Inline&family=Cabin+Condensed:wght@400;500;600;700&family=Cinzel&family=Fugaz+One&family=Indie+Flower&family=Merriweather:ital,wght@0,300;1,400&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Shadows+Into+Light&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    height: 100%vh;
+    width: 100%vw;
+}
+
+body {
+    background: white;
+}
+
+.main {
+    height: 100%vh;
+    width: 100%vw;
+
+}
+
+nav
+ {
+    font-family: 'Bebas Neue', cursive; ;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    color: black;
+}
+
+nav h1
+{
+    color: #000;
+    letter-spacing: 4px;
+    margin-top: 5px;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.nav-links ul 
+{
+    margin-top: 5px;
+    display: flex;
+    list-style-type: none;
+   
+}
+.nav-links li a 
+{
+   
+    letter-spacing: 4px;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin: 0 14px;
+}
+.nav-links li a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.nav-links li a::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:black;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.container {
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.flip-card {
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-front img {
+    border-radius: 6px;
+}
+.flip-card-inner {
+
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    width: 300px;
+    height: 300px;
+}
+
+
+.flip-card-front,
+.flip-card-back {
+    border-radius: 6px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+    background-color: black;
+    color: black;
+   
+}
+
+
+.flip-card-back {
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+   
+}
+h1 {
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin-top: 10px;
+}
+p {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    margin-top: 10px;
+}
+.header {
+    letter-spacing: 4px;
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+}
+.description p{
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+
+    
+}
+footer 
+{
+    margin-top: 50px;
+    padding: 2%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.fotcon 
+{
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    gap: 30px;
+}
+
+.fotcon i 
+{
+   
+    color: grey;
+}
+.fotcon i:hover {
+    color: white;
+    cursor: pointer;
+}
